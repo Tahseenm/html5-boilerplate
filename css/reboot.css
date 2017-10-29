@@ -1,0 +1,542 @@
+/* -------------------------------------------------- */
+/*   DOCUMENT & BODY                                  */
+/* -------------------------------------------------- */
+/*                                                    */
+::selection {
+  /** OPINIONATED ::selection styles */
+  background: #ccedff;
+  color: #343a40;
+  text-shadow: none;
+}
+
+*,
+*::before,
+*::after {
+  /** OPINIONATED styles for every element */
+  box-sizing: inherit;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+  /** OPINIONATED <html> styles */
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+body {
+  /** OPINIONATED <body> styles */
+  position: relative;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #343a40;
+  background: #FFF;
+}
+
+/* -------------------------------------------------- */
+/*   CONTENT SECTIONING                               */
+/* -------------------------------------------------- */
+/*                                                    */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+  /** OPINIONATED <h1> styles */
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 3.05176rem;
+  font-weight: bold;
+  line-height: 1.125;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+  /** OPINIONATED <h2> styles */
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 2.44141rem;
+  font-weight: bold;
+  line-height: 1.125;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h3 {
+  /** OPINIONATED <h3> styles */
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.95312rem;
+  font-weight: bold;
+  line-height: 1.125;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h4 {
+  /** OPINIONATED <h4> styles */
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5625rem;
+  font-weight: bold;
+  line-height: 1.125;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h5 {
+  /** OPINIONATED <h5> styles */
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.125;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h6 {
+  /** OPINIONATED <h6> styles */
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.125;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+address {
+  /** OPINIONATED <address> styles */
+  margin-bottom: 1rem;
+  font-style: normal;
+  line-height: inherit;
+}
+
+blockquote {
+  /** OPINIONATED <blockquote> styles */
+  margin: 0 0 1rem;
+}
+
+/* -------------------------------------------------- */
+/*   TEXT CONTENT                                     */
+/* -------------------------------------------------- */
+/*                                                    */
+p {
+  /** OPINIONATED <p> styles */
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+  /** OPINIONATED <pre> styles */
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow: auto;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  width: 70%;
+  height: 1px;
+  margin: 3rem auto;
+  border: none;
+  background: #dee2e6;
+}
+
+main {
+  display: block;
+}
+
+figure {
+  /** OPINIONATED <figure> styles */
+  margin: 0 0 1rem;
+}
+
+mark {
+  background-color: #FF0;
+  color: #000;
+}
+
+ul {
+  /** OPINIONATED <ul> styles */
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol {
+  /** OPINIONATED <ol> styles */
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+dl {
+  /** OPINIONATED <dl> styles */
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+dt {
+  /** OPINIONATED <dt> styles */
+  font-weight: bold;
+}
+
+dd {
+  /** OPINIONATED <dd> styles */
+  margin-bottom: .5rem;
+  margin-left: 0;
+}
+
+/* -------------------------------------------------- */
+/*   INLINE TEXT SEMANTICS                            */
+/* -------------------------------------------------- */
+/*                                                    */
+a {
+  -webkit-text-decoration-skip: objects;
+  touch-action: manipulation;
+  /** OPINIONATED <a> styles */
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:hover {
+  /** OPINIONATED <a>:hover styles */
+  outline-width: 0;
+  color: #1c7cd6;
+  text-decoration: none;
+}
+
+a:focus {
+  /** OPINIONATED <a>:focus styles */
+  color: #1c7cd6;
+  text-decoration: none;
+  outline-offset: -2px;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+a:active {
+  /** OPINIONATED <a>:active styles */
+  outline-width: 0;
+}
+
+abbr {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+  /** OPINIONATED <abbr title=""> styles */
+  text-decoration: none;
+  cursor: help;
+  border-bottom: 1px dotted #adb5bd;
+}
+
+b {
+  font: bolder;
+}
+
+strong {
+  font: bolder;
+}
+
+code {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+kbd {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+  bottom: -0.25em;
+}
+
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+  top: -0.5em;
+}
+
+/* -------------------------------------------------- */
+/*   IMAGE & MULTIMEDIA                               */
+/* -------------------------------------------------- */
+/*                                                    */
+img {
+  /** Opionated <img> styles */
+  vertical-align: middle;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+area {
+  touch-action: manipulation;
+}
+
+/* -------------------------------------------------- */
+/*    FORMS                                           */
+/* -------------------------------------------------- */
+/*                                                    */
+label {
+  touch-action: manipulation;
+  /** OPINIONATED <label> styles */
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+button {
+  margin: 0;
+  overflow: visible;
+  font: inherit;
+  line-height: inherit;
+  text-transform: none;
+  -webkit-appearance: button;
+  touch-action: manipulation;
+  /** OPINIONATED <button> styles */
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+[role="button"] {
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+input {
+  margin: 0;
+  overflow: visible;
+  font: inherit;
+  line-height: inherit;
+  touch-action: manipulation;
+  /** OPINIONATED <input> styles */
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+[type="button"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+[type="button"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+[type="reset"] {
+  -webkit-appearance: button;
+}
+
+[type="reset"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+[type="reset"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+[type="number"]::-webkit-inner-spin-button {
+  height: auto;
+}
+
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+[type="date"] {
+  -webkit-appearance: listbox;
+}
+
+[type="time"] {
+  -webkit-appearance: listbox;
+}
+
+[type="datetime-local"] {
+  -webkit-appearance: listbox;
+}
+
+[type="month"] {
+  -webkit-appearance: listbox;
+}
+
+optgroup {
+  margin: 0;
+  /** OPINIONATED <optgroup> styles */
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+select {
+  margin: 0;
+  font: inherit;
+  line-height: inherit;
+  text-transform: none;
+  touch-action: manipulation;
+  /** OPINIONATED <select> styles */
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+textarea {
+  margin: 0;
+  overflow: auto;
+  font: inherit;
+  line-height: inherit;
+  touch-action: manipulation;
+  /** OPINIONATED <textarea> styles */
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: inherit;
+  resize: vertical;
+}
+
+fieldset {
+  min-width: 0;
+  /** OPINIONATED <fieldset> styles */
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+  /** OPINIONATED <legend> styles */
+  display: block;
+  width: 100%;
+  margin-bottom: .5rem;
+  font-size: 1.125rem;
+  line-height: inherit;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+/* -------------------------------------------------- */
+/*    MISC                                            */
+/* -------------------------------------------------- */
+/*                                                    */
+table {
+  /** OPINIONATED <table> styles */
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: transparent;
+  font-size: 1rem;
+}
+
+caption {
+  /** OPINIONATED <caption> styles */
+  padding: .5rem 1rem;
+  color: #adb5bd;
+  text-align: left;
+  caption-side: bottom;
+}
+
+th {
+  /** OPINIONATED <th> styles */
+  text-align: left;
+  padding: .5rem 1rem;
+}
+
+td {
+  /** OPINIONATED <td> styles */
+  padding: .5rem 1rem;
+}
+
+summary {
+  display: list-item;
+  touch-action: manipulation;
+}
+
+details {
+  display: block;
+}
+
+template {
+  display: none;
+}
